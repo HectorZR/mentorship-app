@@ -2,8 +2,8 @@
 
 exports[`renders app 1`] = `
 <div>
-  <div>
-    hello
-  </div>
+  <div
+    class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-6 css-honmcm-MuiGrid-root"
+  />
 </div>
 `;
