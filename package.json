@@ -26,6 +26,14 @@
       "eslint"
     ]
   },
+  "prettier": {
+    "trailingComma": "es5",
+    "semi": true,
+    "useTabs": false,
+    "arrowParens": "avoid",
+    "tabWidth": 2,
+    "singleAttributePerLine": true
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
