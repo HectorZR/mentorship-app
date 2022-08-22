@@ -31,13 +31,16 @@
     "semi": true,
     "useTabs": false,
     "arrowParens": "avoid",
-    "tabWidth": 2,
-    "singleAttributePerLine": true
+    "tabWidth": 2
   },
   "eslintConfig": {
+    "plugins": [
+      "sonarjs"
+    ],
     "extends": [
       "react-app",
-      "react-app/jest"
+      "react-app/jest",
+      "plugin:sonarjs/recommended"
     ],
     "overrides": [
       {
@@ -75,6 +78,7 @@
     "@types/node": "^16.11.48",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
+    "eslint-plugin-sonarjs": "^0.15.0",
     "husky": "^8.0.0",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
