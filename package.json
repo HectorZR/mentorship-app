@@ -18,7 +18,8 @@
     "test": "react-scripts test",
     "test:pre-commit": "react-scripts test --watchAll=false",
     "eject": "react-scripts eject",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "codehawk": "codehawk src"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
@@ -30,6 +31,7 @@
     "trailingComma": "es5",
     "semi": true,
     "useTabs": false,
+    "singleQuote": true,
     "arrowParens": "avoid",
     "tabWidth": 2
   },
@@ -78,6 +80,7 @@
     "@types/node": "^16.11.48",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
+    "codehawk-cli": "^10.0.1",
     "eslint-plugin-sonarjs": "^0.15.0",
     "husky": "^8.0.0",
     "lint-staged": "^13.0.3",
