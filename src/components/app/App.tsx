@@ -9,7 +9,7 @@ export function App() {
   const [pokemons, setPokemons] = useState<ResponseShape[]>([]);
 
   useEffect(() => {
-    getResults().then((res) => setPokemons(res.data.results));
+    getResults().then(res => setPokemons(res.data.results));
   }, []);
 
   return (
