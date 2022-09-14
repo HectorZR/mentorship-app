@@ -1,5 +1,5 @@
 import Axios from 'axios';
-import { GetResultsResponse } from '../types';
+import { GetPokemonDetailsResponse, GetResultsResponse } from '../types';
 
 export const getResults = async () => {
   return Axios.get<GetResultsResponse>('pokemon', {
@@ -8,4 +8,8 @@ export const getResults = async () => {
       offset: 0,
     },
   });
+};
+
+export const getPokemonDetails = async (id: number | string) => {
+  return Axios.get<GetPokemonDetailsResponse>(`pokemon/${id}`);
 };
