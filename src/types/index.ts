@@ -11,8 +11,9 @@ export interface GetResultsResponse {
 }
 
 export interface GetPokemonDetailsResponse {
-  abilities: {ability: {name: string}}[];
+  abilities: { ability: { name: string } }[];
   base_experience: number;
-  forms: {name: string;url: string}[];
-  moves: {move: {name: string}}[];
+  forms: { name: string; url: string }[];
+  moves: { move: { name: string } }[];
+  stats: { base_stat: number; effort: number; stat: { name: string } }[];
 }
