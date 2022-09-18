@@ -1,6 +1,3 @@
-/* eslint-disable max-lines-per-function */
-/* eslint-disable  max-lines */
-/* eslint-disable  sonarjs/no-duplicate-string */
 import {
   Card as MuiCard,
   CardContent,
