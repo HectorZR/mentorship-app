@@ -15,7 +15,7 @@ export function App() {
   return (
     <Grid container spacing={6}>
       {pokemons.map(({ name, url }) => (
-        <Grid item xs={2} key={name}>
+        <Grid item xs={3} key={name}>
           <Card name={name} url={url} />
         </Grid>
       ))}

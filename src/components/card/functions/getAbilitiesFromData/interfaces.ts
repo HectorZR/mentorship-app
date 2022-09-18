@@ -1,5 +1,4 @@
-import { ReactNode } from 'react';
-import { GetPokemonDetailsResponse } from '../../../../../../types';
+import { GetPokemonDetailsResponse } from '../../../../types';
 
 export type TAbilitiesInput = GetPokemonDetailsResponse['abilities'];
 
