@@ -9,13 +9,22 @@ export function App() {
   const [pokemons, setPokemons] = useState<ResponseShape[]>([]);
 
   useEffect(() => {
-    getResults().then(res => setPokemons(res.data.results));
+    getResults().then(res =>
+      setPokemons([
+        ...res.data.results,
+        ...res.data.results,
+        ...res.data.results,
+        ...res.data.results,
+        ...res.data.results,
+        ...res.data.results,
+      ])
+    );
   }, []);
 
   return (
     <Grid container spacing={6}>
-      {pokemons.map(({ name, url }) => (
-        <Grid item xs={3} key={name}>
+      {pokemons.map(({ name, url }, index) => (
+        <Grid item xs={3} key={name + index}>
           <Card name={name} url={url} />
         </Grid>
       ))}
